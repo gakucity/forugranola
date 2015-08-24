@@ -1,3 +1,97 @@
 @charset "utf-8";
 /* CSS Document */
 
+
+body {
+	font: 16px/24px "cochin", 'Kozuka Mincho Pro', 'Kozuka Mincho Std', '小塚明朝 Pro R', '小塚明朝 Std R', 'Hiragino Mincho Pro', 'ヒラギノ明朝 Pro W3', 'ＭＳ Ｐ明朝', 'Times', 'Times New Roman', serif ;
+	background-color: #fff;
+	color: #634943;
+	font-weight: 300;
+}
+
+
+#top{
+	background: url("../img/top.jpg");
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+#top a{
+	text-decoration: none;
+	color:#fff;
+}
+
+#top .overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: #000;
+   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+   filter: alpha(opacity=60);
+   opacity: 0.2;
+   z-index: 0;
+}
+
+#top header{
+	padding-top:76px;
+}
+
+#top .logo{
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+	position: relative;;
+}
+
+.logo_box{
+	position: absolute;
+	left:50%;
+	margin-left:-92px; 
+}
+
+.logo_box img{
+	width:184px;
+	height:117px;
+}
+
+.mainnav{
+	display: block;
+	text-align: center;
+}
+
+.menu li{
+	font-size: 13px;
+	font-family: "cochin";
+	text-transform: uppercase;
+	font-weight: 300;
+	line-height: 30px;
+	position: relative;
+	text-decoration: none;
+	margin: 0;
+	padding: 0 4px;
+	display: inline-block;
+	letter-spacing: 3px;
+	margin-left: 30px;
+}
+
+.menu .offset-right{
+	margin: 0;
+	padding: 0;
+	margin: 0 115px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
