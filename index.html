@@ -33,7 +33,19 @@
 	<!-- link setting -->
 	<link rel="stylesheet" type="text/css" href="./css/style.css" />
 	<link rel="stylesheet" type="text/css" href="./css/reset.css" />
-	
+	<script type="text/javascript" src="./js/jquery.min.js"></script>
+
+	<!-- フルスクリーンで背景画像配置 -->
+	<script>
+	$(document).ready(function () {
+	    hsize = $(window).height();
+	    $("#top").css("height", hsize + "px");
+	});//ウィンドウサイズを取得して高さ追加
+	$(window).resize(function () {
+	    hsize = $(window).height();
+	    $("#top").css("height", hsize + "px");
+	});//リサイズされたら高さを再取得
+	</script>
 
 </head>
 
@@ -42,26 +54,44 @@
 	<section id="top">
 		<div class="overlay"></div>
 		<header>
-			<div class="logo">
-				<a href="#">
-					<div class="logo_box">
-						<img src="./img/logo-no.svg">
-					</div>
-				</a>
-			</div><!-- logo --> 
 			<nav class="mainnav">
 				<ul class="menu">
- 					<li><a href="#top">home</a></li>
-					<li><a href="#about">concept</a></li>
-					<li><a href="#restro">product</a></li>
-					<li class="offset-right">&nbsp;</li>
-					<li><a href="#reservation">story </a></li>
-					<li><a href="#blog">news </a></li>
-					<li><a href="#footer">find us</a></li>
+					<span class="menu_left">
+	 					<li><a href="#top">home</a></li>
+						<li><a href="#about">concept</a></li>
+						<li><a href="#restro">product</a></li>
+					</span>
+					<span class="menu_right">
+						<li><a href="#reservation">story </a></li>
+						<li><a href="#blog">news </a></li>
+						<li><a href="#footer">find us</a></li>
+					</span>
 				</ul><!--/.menu-->
 			</nav><!--/#mainnav-->
+
+			<div class="logo">
+				<a href="#">
+					<h1 class="logo_box">
+						<img src="./img/logo-no.svg" alt=FORUGRANOLA>
+					</h1>
+				</a>
+			</div><!-- logo --> 
 		</header>
+
+		<div class="contents">
+			<h4>FULL OF AUSTRALIAN CHARM</h4>
+			<h2>AND GOOD FOR U</h2>
+			<h5>待ちきれない朝、お届けします。</h5>
+			<div class="btn_shop">
+				<a class="btn-reser" href="http://forugranola.theshop.jp/" target="_blank">ONLINESHOP</a>
+			</div>
+		</div>
+
+		<div class="btn_down">
+			<a class="btn-slide" href="#about"></a>
+		</div>
 	</section>
+
 
 
 
