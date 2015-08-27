@@ -34,7 +34,7 @@
 	<link rel="stylesheet" type="text/css" href="./css/reset.css" />
 	<link rel="stylesheet" type="text/css" href="./css/style.css" />
 	<script type="text/javascript" src="./js/jquery.min.js"></script>
-	<script type="text/javascript" src=".js/jquery.smoothScroll.js"></script>
+
 
 	<!-- フルスクリーンで背景画像配置 -->
 	<script>
@@ -42,7 +42,7 @@
 	    hsize = $(window).height();
 	    $("#top").css("height", hsize + "px");
 	});//ウィンドウサイズを取得して高さ追加
-	$(window).resize(function () {
+	//$(window).resize(function () {
 	    hsize = $(window).height();
 	    $("#top").css("height", hsize + "px");
 	});//リサイズされたら高さを再取得
@@ -95,20 +95,47 @@
 
 	<section id="about">
 		<div class="about_box">
-			<div class="title_box">
+			<div class="about_title">
 				<p>FORU GRANOLAは<br />オーストラリアの魅力を詰めた</p>
 			</div>
 			<h1>「黄金比グラノーラ」</h1>
-			<div class="line"><img src="./img/line.png" alt=""></div>
+			<div class="about_line"><img src="./img/line.png" alt=""></div>
 			<div class="detail_box">
 				<p>材料は<br />食感・味・栄養<br />それぞれの黄金比を掛け合わせて<br />選んでいます。<br />私たちのこだわりは<br />無駄なものを一切入れず、ジューシーで<br />かりっと爽やかであることです。</p>
 			</div>
 		</div>
 	</section>
 
+	<section id="products">
+		<div class="products_box">
+			<div class="product_title">
+				<h2>PRODUSTS</h2>
+			</div>
+			<div class="clearfix">
+			<div class="products_contents">
+				<ul>
+				<li>
+					<h3>ONLINE SHOP</h3>
+					<img src="http://placehold.jp/fff/ccc/300x225.png" alt="">
+					<p>〜ネットショップでFORUGRANOLAを楽しむ〜</p>
+				</li>
+				<li>
+					<h3>定期販売</h3>
+					<img src="http://placehold.jp/fff/ccc/300x225.png" alt="">
+					<p>〜毎月、あなたの元にFORUGURANOLAが届く〜</p>
+				</li>
+				<li>
+					<h3>生グラノーラ</h3>
+					<img src="http://placehold.jp/fff/ccc/300x225.png" alt="">
+					<p>〜実店舗限定の新食感、生グラノーラ〜</p>
+				</li>
+				</ul>
+			</div>
+		</div><!-- ./clearfix -->
+		</div>
+	</section>
 
-
-
+ 
 
 
 

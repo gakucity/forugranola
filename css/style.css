@@ -10,6 +10,12 @@ body {
 	font-weight: 300;
 }
 
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
 
 /*-------top*---------*/
 #top{
@@ -105,7 +111,7 @@ body {
 
 .contents{
     position: relative;
-    top: 42%;
+    top: 15%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
@@ -202,7 +208,7 @@ body {
 	margin: 0 auto;
 }
 
-.title_box p{
+.about_title p{
   font-size: 18px;
   letter-spacing: 1px;
   color: #a06953;
@@ -222,7 +228,7 @@ body {
   font-weight: 400;
 }
 
-.line{
+.about_line{
 	text-align: center;
 	margin:0px auto 19px;
 }
@@ -230,6 +236,62 @@ body {
 .detail_box p{
 	line-height: 31px;
 }
+
+
+/*----products----*/
+#products{
+	background-color: #ccc;
+}
+
+.products_box{
+	padding:80px 0px;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	color:#fff;
+}
+
+.product_title h2{
+	font-size: 36px;
+	letter-spacing: 1.5px;
+}
+
+.products_contents ul{
+	display: block;
+	text-align: center;
+	margin: 0 5%;
+}
+
+.products_contents li{
+	float:left;
+	text-align: center;
+	margin-left: 4%;
+	width:30%;
+}
+
+.products_contents ul li:first-child{
+	float:left;
+	text-align: center;
+	margin-left: 0%;
+	width:30%;
+}
+
+.products_contents li h3{
+	font-size: 24px;
+	margin-bottom: 7px;
+}
+
+.products_contents li img{
+	margin-bottom: 7px;
+}
+
+
+
+
+
+
+
+
 
 
 
