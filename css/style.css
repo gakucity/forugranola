@@ -285,13 +285,267 @@ body {
 	margin-bottom: 7px;
 }
 
+/*---blog---*/
+#blog{
+	background-color: #fff;
+}
+
+.blog_wrap{
+	padding:80px 0px;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.sec_title h2{
+	font-size: 36px;
+	letter-spacing: 1.5px;
+}
+
+.sec_line{
+	text-align: center;
+	margin:20px auto 20px;
+}
+
+.blog_container{
+	display: block;
+	margin: 115px auto;
+	text-align: center;
+}
+
+.blog-box{
+	width:25%;
+	float:left;
+	padding:0px 15px;
+}
+
+.blog-user {
+	position: relative;
+	height: auto;
+	overflow: hidden;
+}
+
+.blog-user .blog-img {
+	height: auto;
+	background-color: #fff;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.blog-user .blog-day {
+	position: absolute;
+	border-radius: 50%;
+	border: 2px solid #fff;
+	width: 60px;
+	height: 60px;
+	margin: 8.33% 0 0 8.33%;
+	color: #f9f6f3;
+	top: 0;
+	z-index: 9;
+}
+
+.blog-user .blog-day span {
+	color: #f9f6f3;
+	text-align: center;
+	line-height: 22px;
+	display: inherit;
+}
+
+.blog-user .blog-day span.number {
+	font-size: 26px;
+	margin-top: 7px;
+}
+
+.blog-user .blog-day span.month {
+	font-size: 13px;
+}
+
+.blog-user a .blog-img {
+	position: relative;
+	border-bottom: 1px solid #f9f9f9;
+	text-align: center;
+}
+
+.blog-user a .blog-img img {
+	width: 100%;
+	height: auto;
+}
+
+.blog-content:before {
+	position: absolute;
+	top: -28px;
+	right: 77px;
+	border: 17px solid transparent;
+	border-bottom: 14px solid #f9f9f9;
+	content: "";
+}
+
+.blog-user a:hover .blog-img {
+	opacity: 0.5;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	filter: alpha(opacity=50);
+	background-color: #bfab9e;
+  	-webkit-transform: scale(1.05);
+  	transform: scale(1.05);
+}
+
+.blog-user a:hover .blog-day {
+	-webkit-animation: toRightFromLeftAround 0.6s forwards;
+	-moz-animation: toRightFromLeftAround 0.6s forwards;
+	animation: toRightFromLeftAround 0.6s forwards;
+}
+
+.blog-user a .blog-img:before {
+	font-size: 0;
+	content: "+";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: 0;
+	margin-top: -12px;
+	color: #fff;
+	z-index: 2;
+	opacity: 0;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.blog-user a:hover .blog-img:before {
+	opacity: 1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	font-size: 72px;
+	margin-left: -21px;
+}
+
+.blog-content {
+	border: 1px solid #eaeaea;
+	position: relative;
+	background-color: #f9f9f9;
+	text-align: left;
+	display: inherit;
+}
+
+.blog-content h4.title {
+	font-weight: 700;
+	font-size: 14px;
+	letter-spacing: 1.1px;
+	width: 100%;
+	padding-left: 29px;
+	padding-top: 21px;
+	margin: 0
+}
+
+.blog-content h4.title a {
+	color: #a06953;
+}
+
+.blog-content span.short {
+	color: #000;
+	font-size: 16px;
+	line-height: 31px;
+	padding: 5px 0 20px 30px;
+	display: inherit;
+}
+
+.blog-section button {
+	bottom: 0;
+	margin-top: 55px;
+}
+
+.titlebox.blog-box {
+	margin-bottom: 47px;
+	margin-top: -10px;
+}
+
+.titlebox.blog-box h2 {
+	text-shadow: none;
+}
+
+.blog-section .blog-user {
+	margin-top: 47px;
+	overflow: hidden;
+}
+
+/*---meet---*/
+.meet_text{
+	background: url("../img/granola5-min.jpg") center center / cover no-repeat;
+}
+
+.meet_text img:first-child{
+	padding-top: 100px;
+	padding-bottom: 0px;
+}
+
+.meet_text h3{
+	margin:50px auto;
+	color:#fff;
+	font-size: 40px;
+	text-align: center;
+}
+
+.meet_text img{
+	padding-bottom: 100px;
+	display: block;
+	margin: 0 auto;
+}
 
 
+/*---voice---*/
+#voice{
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+}
 
+.voice_wrap{
+	padding-top: 40px;
+	padding-bottom: 70px;
+}
 
+.voice_img{
+	margin:70px auto;
+}
 
+.voice_wrap ul li{
+	width:14.285%;
+	float:left;
+}
 
+.more_button{
+	margin-top: 40px;
+}
 
+.btn_more {
+	font-family:"cochin", 'Kozuka Mincho Pro', 'Kozuka Mincho Std', '小塚明朝 Pro R', '小塚明朝 Std R', 'Hiragino Mincho Pro', 'ヒラギノ明朝 Pro W3', 'ＭＳ Ｐ明朝', 'Times', 'Times New Roman', serif ;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+/*-webkit-box-shadow: #6E7849 0 0 10px;*/
+  -webkit-transition: all 0.5s ease;
+  background-color: #ffffff;
+  border: 1px solid #a06953;
+  color: #a06953;
+  display: inline-block;
+  font-size: 16px;
+  margin: auto;
+  padding: 11px 21px;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+.btn_more:hover {
+  background-color: #a06953;
+  color: #ffffff;
+  padding: 11px 21px;
+}
 
 
 
