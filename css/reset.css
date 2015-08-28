@@ -39,6 +39,10 @@ a img {
   border: none;
 }
 
+ul{
+  list-style: none;
+}
+
 
 /*clearfix*/
 .clearfix:after {  

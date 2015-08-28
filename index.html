@@ -42,7 +42,7 @@
 	    hsize = $(window).height();
 	    $("#top").css("height", hsize + "px");
 	});//ウィンドウサイズを取得して高さ追加
-	//$(window).resize(function () {
+	$(window).resize(function () {
 	    hsize = $(window).height();
 	    $("#top").css("height", hsize + "px");
 	});//リサイズされたら高さを再取得
@@ -131,21 +131,24 @@
 				</li>
 				</ul>
 			</div>
-		</div><!-- ./clearfix -->
+			</div><!-- ./clearfix -->
 		</div>
 	</section>
 
 	<section id="blog">
 		<div class="blog_wrap">
+			<!-- title -->
 			<div class="sec_title">
 				<h2>NEWS</h2>
 				<div class="sec_line"><img src="./img/line.png" alt=""></div>
 			</div>
 			
-			<dic class="clearfix">
+
 			<div class="blog_container">
+			<div class="clearfix">
 				<!-- topic1 -->
-				<div class="blog-box">
+				<ul>
+				<li class="blog-box">
 					<div class="blog-user">
 		 				<a href="" target="_blank">
 							<div class="blog-img">
@@ -160,12 +163,12 @@
 					<div class="blog-content">
 						<h4 class="title"><a href="" target="_blank">2015.9.16~22新宿高島屋出店</a>
 						</h4>
-						<span class="short">2015.9.16~22新宿高島屋地下1階催事場「デリシャスフェア」に出店します。
+						<span class="short">2015.9.16~22新宿高島屋地下1階催事場「デリシャスフェア」に出店します。</span>
 					</div>
-				</div>
+				</li>
 				
 				<!-- topic2 -->
-				<div class="blog-box">
+				<li class="blog-box">
 					<div class="blog-user">
 		 				<a href="" target="_blank">
 							<div class="blog-img">
@@ -180,13 +183,13 @@
 					<div class="blog-content">
 						<h4 class="title"><a href="" target="_blank">2015.9.16~22新宿高島屋出店</a>
 						</h4>
-						<span class="short">2015.9.16~22新宿高島屋地下1階催事場「デリシャスフェア」に出店します。
+						<span class="short">2015.9.16~22新宿高島屋地下1階催事場「デリシャスフェア」に出店します。</span>
 					</div>
-				</div>
+				</li>
 
 
 				<!-- topic3 -->
-				<div class="blog-box">
+				<li class="blog-box">
 					<div class="blog-user">
 		 				<a href="" target="_blank">
 							<div class="blog-img">
@@ -201,11 +204,13 @@
 					<div class="blog-content">
 						<h4 class="title"><a href="" target="_blank">2015.9.16~22新宿高島屋出店</a>
 						</h4>
-						<span class="short">2015.9.16~22新宿高島屋地下1階催事場「デリシャスフェア」に出店します。
+						<span class="short">2015.9.16~22新宿高島屋地下1階催事場「デリシャスフェア」に出店します。</span>
 					</div>
-				</div>
+				</li>
+				</ul>
+
+			</div><!-- clearfix -->
 			</div><!-- ./blog_container -->
-			</div>
 		</div><!-- ./blog_wrap -->
 	</section>
 
@@ -246,15 +251,63 @@
 	</section>
 
 	<footer>
-		
+
+		<div class="foot-wrap">
+			<div class="foot-container">
+			<div class="clearfix">
+			
+			<div class="foot-mark">
+				<div class="brand">
+					<img alt="image" src="./img/logo01.svg" width="197" height="165">
+				</div>
+
+				<div class="clearfix">
+				<div class="social">
+					<ul>
+						<li><a href=""><img src="./img/btn_fb.png" alt=""></a></li>
+						<li><a href=""><img src="./img/btn_tw.png" alt=""></a></li>
+						<li><a href=""><img src="./img/btn_sc.png" alt=""></a></li>
+						<li><a href=""><img src="./img/btn_mail.png" alt=""></a></li>
+					</ul>
+				</div>
+				</div><!-- clearfix -->
+			</div><!-- foot-mark	 -->
+			
+			<div class="company">
+				<h3>FIND US</h3>
+				<p>03-6233-8739</p>
+				<a href="mailto:forugranola@gmail.com" class="email"><p>
+	forugranola@gmail.com</p></a>
+				<p>東京都新宿区西早稲田<br />2-4-26 1F 〒162-0051</p>
+				<p><span style="color:#ecb313;">COMPANY</span>: FORU STYLE, INC</p>
+			</div>c<!-- ompany -->
+
+			<div class="sitemap1">
+				<ul>
+				<a href=""><li>ONLINE SHOP</li></a>
+				<a href=""><li>定期宅配</li></a>
+				<a href=""><li>生グラノーラ</li></a>
+				<a href=""><li>STORY</li></a>
+				<a href=""><li>VOICE</li></a>
+				</ul>
+			</div><!-- sitemap1 -->
+
+			<div class="sitemap2">
+				<ul>
+				<a href=""><li>会社概要</li></a>
+				<a href=""><li>利用案内</li></a>
+				<a href=""><li>特定商取引法に基づく表示</li></a>
+				<a href=""><li>プライバシーポリシー</li></a>
+				<a href=""><li>お問い合わせ</li></a>
+				</ul>
+			</div><!-- sitemap2 -->
+
+			</div><!-- clearfix -->
+			</div>
+
+		</div><!-- foot-wrap -->
+
 	</footer>
-
-
-
-
-
-
-
 
 
 
