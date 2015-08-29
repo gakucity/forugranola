@@ -312,10 +312,12 @@ body {
 	margin: 115px auto;
 	position: relative;
 	overflow: hidden;
+	width: 92%;
 }
 
 .blog_container ul{
 	position: relative;
+	text-align: center;
 }
 
 .blog_container ul li{
@@ -554,29 +556,24 @@ body {
 
 /*---footer---*/
 footer{
-	background: url("../img/foot-bg.png")repeat-x;
+	background: url("../img/foot-bg.png")repeat;
 	position:relative;
 }
 
 .foot-wrap{
 	padding:100px 0px;
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	margin: auto;
+	font-size: 14px;
 }
 
 .foot-container{
 	display: block;
-	margin: 0px auto;
 	text-align: center;
-	width:80%;
 }
 
 .foot-mark{
-	float:left;
+	display: -moz-inline-box;  
+	display: inline-block; 
+	vertical-align: top; 
 }
 
 .brand{
@@ -584,7 +581,7 @@ footer{
 }
 
 .social{
-
+padding-left: 10px;
 }
 
 .social li{
@@ -599,7 +596,13 @@ footer{
 
 .company{
 	color:#fff;
-	float:left;
+	display: -moz-inline-box;  
+	display: inline-block;
+	padding-left: 100px;
+	padding-right: 40px; 
+	text-align: left;
+	vertical-align: top; 
+	height:192px;
 }
 
 .company h3{
@@ -607,17 +610,27 @@ footer{
 	font-size: 22px;
 	line-height: 20px;
 	letter-spacing: 1px;
-	padding-bottom: 20px;
 }
 
-.company h3 ::after{
+.find_us:after{
 	content: "";
-	position: absolute;
-	bottom: 0;
-	left: 0;
+	display: block;
 	width: 67px;
 	border-bottom: 1px solid #fff;
 	margin-left: 1px;
+	padding-bottom: 20px;
+}
+
+.company p{
+	padding:5px 0px;
+}
+
+.company p:nth-child(2){
+	padding-top:20px;
+}
+
+.company p:nth-child(5){
+	padding-top:20px;
 }
 
 .company a{
@@ -631,7 +644,18 @@ footer{
 }
 
 .sitemap1{
-	float:left;
+	display: -moz-inline-box;  
+	display: inline-block;
+	padding: 0px 50px;
+	border-right: 1px solid #fff;
+	border-left: 1px solid #fff;
+	text-align: left;
+	vertical-align: top; 
+	height:206px;
+}
+
+.sitemap1 li{
+	padding: 5px 0px;
 }
 
 .sitemap1 a{
@@ -645,8 +669,18 @@ footer{
 }
 
 .sitemap2{
-	float:left;
+	display: -moz-inline-box;  
+	display: inline-block;
+	padding-left: 50px;
+	vertical-align: top; 
+	height:192px;
 }
+
+.sitemap2 li{
+	padding: 5px 0px;
+	text-align: left;
+}
+
 
 .sitemap2 a{
 	text-decoration: none;
@@ -656,6 +690,18 @@ footer{
 .sitemap2 a:hover{
 	color:#a06953;
 	text-decoration: none;
+}
+
+.foot-end{
+	background-color: #000;
+	height:50px;
+}
+
+.foot-end p{
+	font-size: 13px;
+	color:#fff;
+	padding-top: 16px;
+	margin-left: 16%;
 }
 
 
