@@ -34,15 +34,27 @@
 	<link rel="stylesheet" type="text/css" href="./css/reset.css" />
 	<link rel="stylesheet" type="text/css" href="./css/style.css" />
 	<script type="text/javascript" src="./js/jquery.min.js"></script>
+	<script>
+	//ウィンドウサイズを取得する
+	//function getWindowSize() {
+		var sW,sH,s;
+		sW = window.innerWidth;
+		sH = window.innerHeight;
+}
+	//function hoge() {
+        var sampleNode=document.getElementById("top");
+        sampleNode.style.height = sH+"px";
+}
 
+	</script>
 
 	<!-- フルスクリーンで背景画像配置 -->
 	<script>
-	$(document).ready(function () {
+	//$(document).ready(function () {
 	    hsize = $(window).height();
 	    $("#top").css("height", hsize + "px");
 	});//ウィンドウサイズを取得して高さ追加
-	$(window).resize(function () {
+	//$(window).resize(function () {
 	    hsize = $(window).height();
 	    $("#top").css("height", hsize + "px");
 	});//リサイズされたら高さを再取得
@@ -111,22 +123,23 @@
 			<div class="product_title">
 				<h2>PRODUSTS</h2>
 			</div>
+			<div class="sec_line"><img src="./img/line_w.png" alt=""></div>
 			<div class="clearfix">
 			<div class="products_contents">
 				<ul>
 				<li>
 					<h3>ONLINE SHOP</h3>
-					<img src="http://placehold.jp/fff/ccc/300x225.png" alt="">
+					<img src="./img/product_nama.jpg" alt="">
 					<p>〜ネットショップでFORUGRANOLAを楽しむ〜</p>
 				</li>
 				<li>
 					<h3>定期販売</h3>
-					<img src="http://placehold.jp/fff/ccc/300x225.png" alt="">
+					<img src="./img/product_nama.jpg" alt="">
 					<p>〜毎月、あなたの元にFORUGURANOLAが届く〜</p>
 				</li>
 				<li>
 					<h3>生グラノーラ</h3>
-					<img src="http://placehold.jp/fff/ccc/300x225.png" alt="">
+					<img src="./img/product_nama.jpg" alt="">
 					<p>〜実店舗限定の新食感、生グラノーラ〜</p>
 				</li>
 				</ul>
