@@ -34,31 +34,52 @@
 	<link rel="stylesheet" type="text/css" href="./css/reset.css" />
 	<link rel="stylesheet" type="text/css" href="./css/style.css" />
 	<script type="text/javascript" src="./js/jquery.min.js"></script>
-	<script>
-	//ウィンドウサイズを取得する
-	//function getWindowSize() {
-		var sW,sH,s;
-		sW = window.innerWidth;
-		sH = window.innerHeight;
-}
-	//function hoge() {
-        var sampleNode=document.getElementById("top");
-        sampleNode.style.height = sH+"px";
-}
 
-	</script>
-
-	<!-- フルスクリーンで背景画像配置 -->
-	<script>
-	//$(document).ready(function () {
-	    hsize = $(window).height();
-	    $("#top").css("height", hsize + "px");
-	});//ウィンドウサイズを取得して高さ追加
-	//$(window).resize(function () {
-	    hsize = $(window).height();
-	    $("#top").css("height", hsize + "px");
-	});//リサイズされたら高さを再取得
-	</script>
+	
+	<script>/*メインビジュアルの文字の文字をスライドさせる*/
+$(function(){
+    $(window).load(function(){
+        var $setElm = $('.contents_slide');
+        var effectSpeed = 300;
+        var switchDelay = 3000;
+        var easing = 'swing';
+ 
+        $setElm.each(function(){
+            var effectFilter = $(this).attr('rel'); // 'fade' or 'roll' or 'slide'
+ 
+            var $targetObj = $(this);
+            var $targetUl = $targetObj.children('ul');
+            var $targetLi = $targetObj.find('li');
+            var $setList = $targetObj.find('li:first');
+ 
+            var ulWidth = $targetUl.width();
+            var listHeight = $targetLi.height();
+            $targetObj.css({height:(listHeight)});
+            $targetLi.css({top:'0',left:'0',position:'absolute'});
+ 
+            var liCont = $targetLi.length;
+ 
+  			if(effectFilter == 'roll') {
+                $setList.css({top:'3em',display:'block',opacity:'0',zIndex:'98'}).stop().animate({top:'0',opacity:'1'},effectSpeed,easing).addClass('showlist');
+                if(liCont > 1) {
+                    setInterval(function(){
+                        var $activeShow = $targetObj.find('.showlist');
+                        $activeShow.animate({top:'-3em',opacity:'0'},effectSpeed,easing).next().css({top:'3em',display:'block',opacity:'0',zIndex:'99'}).animate({top:'0',opacity:'1'},effectSpeed,easing).addClass('showlist').end().appendTo($targetUl).css({zIndex:'98'}).removeClass('showlist');
+                    },switchDelay);
+                }
+            } else if(effectFilter == 'slide') {
+                $setList.css({left:(ulWidth),display:'block',opacity:'0',zIndex:'98'}).stop().animate({left:'0',opacity:'1'},effectSpeed,easing).addClass('showlist');
+                if(liCont > 1) {
+                    setInterval(function(){
+                        var $activeShow = $targetObj.find('.showlist');
+                        $activeShow.animate({left:(-(ulWidth)),opacity:'0'},effectSpeed,easing).next().css({left:(ulWidth),display:'block',opacity:'0',zIndex:'99'}).animate({left:'0',opacity:'1'},effectSpeed,easing).addClass('showlist').end().appendTo($targetUl).css({zIndex:'98'}).removeClass('showlist');
+                    },switchDelay);
+                }
+            }
+        });
+    });
+});
+</script>
 
 </head>
 
@@ -93,7 +114,15 @@
 
 		<div class="contents">
 			<h4>FULL OF AUSTRALIAN CHARM</h4>
-			<h2>AND GOOD FOR U</h2>
+			<div class="contents_slide" rel="roll">
+				<ul>
+				<li><h2>CRUNCHY</h2></li>
+				<li><h2>JUICY</h2></li>
+				<li><h2>COMFORTING</h2></li>
+				<li><h2>DELICIOUS</h2></li>
+				<li><h2>AND GOOD FOR U</h2></li>
+				</ul>
+			</div>
 			<h5>待ちきれない朝、お届けします。</h5>
 			<div class="btn_shop">
 				<a class="btn-reser" href="http://forugranola.theshop.jp/" target="_blank">ONLINESHOP</a>

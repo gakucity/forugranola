@@ -130,6 +130,22 @@ body {
 	letter-spacing: 5px;
 }
 
+.contents_slide {
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+}
+ 
+.contents_slide ul {
+	width: 100%;
+ 	position: relative;
+}
+ 
+.contents_slide ul li {
+	width: 100%;
+	display: none;
+}
+
 .contents h2{
 	color:#fff;
 	font-size: 48px;
