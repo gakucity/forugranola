@@ -34,6 +34,7 @@
 	<link rel="stylesheet" type="text/css" href="./css/reset.css" />
 	<link rel="stylesheet" type="text/css" href="./css/style.css" />
 	<script type="text/javascript" src="./js/jquery.min.js"></script>
+	<script type="text/javascript" src="./js/autoslide.js"></script>
 
 	
 	<script>/*メインビジュアルの文字の文字をスライドさせる*/
@@ -81,6 +82,26 @@ $(function(){
 });
 </script>
 
+<!-- スムーズスクロール部分の記述 -->
+<script>
+$(function(){
+   // #で始まるアンカーをクリックした場合に処理
+   $('a[href^=#]').click(function() {
+      // スクロールの速度
+      var speed = 400; // ミリ秒
+      // アンカーの値取得
+      var href= $(this).attr("href");
+      // 移動先を取得
+      var target = $(href == "#" || href == "" ? 'html' : href);
+      // 移動先を数値で取得
+      var position = target.offset().top;
+      // スムーススクロール
+      $('body,html').animate({scrollTop:position}, speed, 'swing');
+      return false;
+   });
+});
+</script>
+
 </head>
 
 
@@ -93,11 +114,11 @@ $(function(){
 					<span class="menu_left">
 	 					<li><a href="#top">home</a></li>
 						<li><a href="#about">concept</a></li>
-						<li><a href="#restro">product</a></li>
+						<li><a href="#products">products</a></li>
 					</span>
 					<span class="menu_right">
-						<li><a href="#reservation">story </a></li>
-						<li><a href="#blog">news </a></li>
+						<li><a href="#blog">news</a></li>
+						<li><a href="#voice">voice</a></li>
 						<li><a href="#footer">find us</a></li>
 					</span>
 				</ul><!--/.menu-->
@@ -275,7 +296,7 @@ $(function(){
 			</div>
 			<div class="clearfix">
 				<div class="voice_img">
-					<ul>
+					<ul class="voice_slidein">
 						<li><img src="./img/voice_1.jpg" alt=""></li>
 						<li><img src="./img/voice_2.jpg" alt=""></li>
 						<li><img src="./img/voice_3.jpg" alt=""></li>
@@ -292,7 +313,7 @@ $(function(){
 		</div>
 	</section>
 
-	<footer>
+	<footer id="footer">
 
 		<div class="foot-wrap">
 			<div class="foot-container">
@@ -326,11 +347,11 @@ $(function(){
 
 			<div class="sitemap1">
 				<ul>
-				<a href=""><li>ONLINE SHOP</li></a>
+				<a href="http://forugranola.theshop.jp/" target="_blank"><li>ONLINE SHOP</li></a>
 				<a href=""><li>定期宅配</li></a>
 				<a href=""><li>生グラノーラ</li></a>
-				<a href=""><li>STORY</li></a>
-				<a href=""><li>VOICE</li></a>
+				<a href="#blog"><li>NEWS</li></a>
+				<a href="#voice"><li>VOICE</li></a>
 				</ul>
 			</div><!-- sitemap1 -->
 

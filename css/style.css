@@ -63,6 +63,7 @@ body {
 	margin-right: 17%;
 }
 
+
 .menu li{
 	font-size: 13px;
 	font-family: "cochin";
@@ -540,10 +541,24 @@ body {
 
 .voice_img{
 	margin:70px auto;
+	width:3000%;
+	height:160px;
+	overflow:hidden;
+	position:relative;
+
+}
+
+.voice_slidein{
+	position:absolute;
+	left:0;
+	top:0;
+}
+
+.voice_img li {
+	float:left;
 }
 
 .voice_wrap ul li img{
-	width:14.285%;
 	float:left;
 }
 
