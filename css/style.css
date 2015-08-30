@@ -264,7 +264,7 @@ body {
 }
 
 .products_box{
-	padding:80px 0px;
+	padding:70px 0px 90px 0px;
 	display: block;
 	margin: 0 auto;
 	text-align: center;
@@ -275,6 +275,11 @@ body {
 	font-size: 36px;
 	letter-spacing: 1.5px;
 }
+
+.products_contents{
+	margin-top: 50px;
+}
+
 
 .products_contents ul{
 	display: block;
@@ -297,7 +302,7 @@ body {
 }
 
 .products_contents li h3{
-	font-size: 24px;
+	font-size: 21px;
 	margin-bottom: 7px;
 }
 
